@@ -33,18 +33,20 @@ CSRF_TRUSTED_ORIGINS = os.environ.get(
 # APPLICATIONS
 # --------------------------------------------------
 INSTALLED_APPS = [
-     'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
-    'ojt_backend.users',
-    'ojt_backend.attendance',
-    'ojt_backend.api',
+
+    'users',
+    'attendance',
+    'api',
 ]
 
 
