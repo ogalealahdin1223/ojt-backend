@@ -46,8 +46,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
 
-    'users',
-    'attendance',
+    'ojt_backend.users',
+    'ojt_backend.attendance',
+    'ojt_backend.api',
 ]
 
 
