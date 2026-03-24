@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "python manage.py migrate && python create_superuser.py && python manage.py collectstatic --noinput && gunicorn ojt_backend.wsgi:application --bind 0.0.0.0:$PORT"]
+CMD ["sh", "-c", "python manage.py migrate && python create_hr_user.py && python manage.py collectstatic --noinput && gunicorn ojt_backend.wsgi:application --bind 0.0.0.0:$PORT"]
